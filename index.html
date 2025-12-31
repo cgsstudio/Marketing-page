@@ -197,11 +197,11 @@
         }
 
         @media (max-width: 768px) {
-           .blob-2{
-            bottom: unset;
-            right: 0;
-            top: 5%;
-           }
+            .blob-2 {
+                bottom: unset;
+                right: 0;
+                top: 5%;
+            }
         }
 
         @keyframes moveBlob {
@@ -614,7 +614,7 @@
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50 px-6 py-1 text-white mix-blend-difference transition-all duration-300">
         <div class="flex justify-between items-center container mx-auto px-0 md:px-10">
-            <a href="https://chameleogfxstudio.com/" class="interactive-element relative z-50 block w-32 md:w-60">
+            <a href="https://chameleogfxstudio.com/" class="interactive-element relative z-50 block w-40 md:w-60">
                 <img src="https://chameleogfxstudio.com/assets/Cgs_Logo-Bq-O945l.png" alt="Chameleo GFX Studio Logo"
                     class="w-full h-auto object-contain brightness-0 invert">
             </a>
@@ -691,9 +691,9 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="min-h-[65vh] md:min-h-screen flex items-center justify-center relative px-6">
+    <section class="min-h-[70vh] md:min-h-screen flex items-center justify-center relative px-6">
         <div class="max-w-[1400px] w-full pt-20 md:pt-20">
-            <div class="flex flex-col md:flex-row items-end justify-between mb-8 reveal-up">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-14 md:mb-8 reveal-up">
                 <p class="text-sm md:text-base font-light tracking-wide max-w-xs text-white">
                     A premium digital agency crafting <span class="text-gradient font-medium">digital alchemy</span> for
                     ambitious brands.
@@ -704,7 +704,7 @@
                 </div>
             </div>
 
-            <h1 class="font-display font-extrabold text-[11vw] leading-[0.85] tracking-tighter mb-12 text-white reveal-up break-words text-center md:text-left"
+            <h1 class="font-display font-extrabold text-[16vw] md:text-[11vw] leading-[0.85] tracking-tighter mb-20 md:mb-12 text-white reveal-up break-words text-center md:text-left"
                 style="transition-delay: 0.1s;">
                 DIGITAL <br>
                 <span
@@ -732,7 +732,7 @@
     </section>
 
     <!-- Marquee -->
-    <div class="py-12 bg-white/5 border-y border-white/10 backdrop-blur-sm overflow-hidden">
+    <div class="py-8 md:py-12 bg-white/5 border-y border-white/10 backdrop-blur-sm overflow-hidden">
         <div class="marquee-track">
             <span class="text-4xl md:text-6xl font-display font-bold text-white uppercase">Strategy • Branding • Web
                 Design • Development • SEO • Content • Strategy • Branding • Web Design • Development • SEO • Content
@@ -751,7 +751,8 @@
                     class="text-xl md:text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 uppercase block mb-6">ABOUT
                     US</span>
                 <h3 class="font-display text-4xl font-semibold mb-6 text-white">We don't just build websites. We build
-                    <span class="text-gradient">empires.</span></h3>
+                    <span class="text-gradient">empires.</span>
+                </h3>
                 <p class="text-white font-light leading-relaxed mb-6">
                     Chameleo GFX Studio stands at the intersection of high-end aesthetics and rigorous data strategy. We
                     believe that true luxury in the digital age is seamless functionality wrapped in breathtaking
@@ -1170,45 +1171,49 @@
     <!-- Selected Works (Parallax-ish) -->
     <section id="work" class="py-12 md:py-32 px-6 bg-charcoal">
         <div class="max-w-[1400px] mx-auto">
-            <span
-                class="text-xl md:text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 uppercase block mb-6 reveal-up">PORTFOLIO</span>
+            <div
+                class="flex md:flex-row flex-col justify-between items-center md:items-center mb-8 space-y-4 md:space-y-0 md:gap-12">
+                <span
+                    class="text-xl md:text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 uppercase block mb-0 reveal-up">PORTFOLIO</span>
 
-            <!-- Portfolio category tabs -->
-            <div class="portfolio-tabs flex gap-3 overflow-x-auto hide-scrollbar pb-6 md:pb-8 reveal-up">
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="all" aria-pressed="true">All</button>
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="ui-ux">UI/UX</button>
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="branding">Branding</button>
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="web-dev">Web Dev</button>
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="seo">SEO</button>
-                <button
-                    class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
-                    data-filter="marketing">Marketing</button>
+                <!-- Portfolio category tabs -->
+                <div
+                    class="portfolio-tabs w-full md:w-auto max-w-full flex justify-start gap-3 overflow-x-auto hide-scrollbar reveal-up">
+                    <button
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        data-filter="website" aria-pressed="true">Website</button>
+                    <button
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        data-filter="logo">Logo</button>
+                    <button
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        data-filter="branding">Branding</button>
+                    <button
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        data-filter="seo">SEO</button>
+                    <button
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        data-filter="marketing">Marketing</button>
+                </div>
+
             </div>
 
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-                <!-- Project 1 -->
-                <div class="reveal-up interactive-element cursor-none group project-item" data-category="ui-ux,web-dev">
+                <!-- Website Projects -->
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="website">
                     <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Project 1">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="Tech Startup Website">
                         <div class="project-overlay absolute inset-0 flex items-end p-8">
                             <span
                                 class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
                                 Case Study</span>
                         </div>
                     </div>
-                    <h4 class="text-2xl font-display font-bold text-white">Lumina Finance</h4>
-                    <span class="text-white text-sm">UI/UX • Web Development</span>
+                    <h4 class="text-2xl font-display font-bold text-white">Tech Innovate</h4>
+                    <span class="text-white text-sm">Website Design & Development</span>
                     <br><br>
                     <a href="https://wa.me/919737472636"
                         class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
@@ -1216,13 +1221,150 @@
                     </a>
                 </div>
 
-
-                <!-- Project 2 (Offset) -->
                 <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
-                    data-category="branding">
+                    data-category="website">
                     <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Project 2">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="E-commerce Website">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Urban Fashion</h4>
+                    <span class="text-white text-sm">E-commerce Website</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="website">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="Portfolio Website">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Creative Studio</h4>
+                    <span class="text-white text-sm">Portfolio Website</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
+                    data-category="website">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="Corporate Website">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Apex Consulting</h4>
+                    <span class="text-white text-sm">Corporate Website</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Logo Projects -->
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="logo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Minimalist Logo">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Nexus Ventures</h4>
+                    <span class="text-white text-sm">Logo Design</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item" data-category="logo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Modern Logo">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Pulse Fitness</h4>
+                    <span class="text-white text-sm">Logo Design</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="logo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Elegant Logo">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Luxe Boutique</h4>
+                    <span class="text-white text-sm">Logo Design</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item" data-category="logo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Tech Logo">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Quantum Labs</h4>
+                    <span class="text-white text-sm">Logo Design</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="branding">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Brand Identity">
                         <div class="project-overlay absolute inset-0 flex items-end p-8">
                             <span
                                 class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
@@ -1230,7 +1372,7 @@
                         </div>
                     </div>
                     <h4 class="text-2xl font-display font-bold text-white">Vortex Energy</h4>
-                    <span class="text-white text-sm">Rebranding • Strategy</span>
+                    <span class="text-white text-sm">Brand Identity • Strategy</span>
                     <br><br>
                     <a href="https://wa.me/919737472636"
                         class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
@@ -1238,11 +1380,70 @@
                     </a>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="reveal-up interactive-element cursor-none group project-item" data-category="web-dev,seo">
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
+                    data-category="branding">
                     <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Project 3">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Rebranding">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Zenith Wellness</h4>
+                    <span class="text-white text-sm">Rebranding • Visual Identity</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="branding">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Food Branding">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Gourmet Haven</h4>
+                    <span class="text-white text-sm">Brand Strategy • Packaging</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
+                    data-category="branding">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Fashion Branding">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Nova Apparel</h4>
+                    <span class="text-white text-sm">Branding • Collateral Design</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- SEO Projects -->
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="seo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="SEO Strategy">
                         <div class="project-overlay absolute inset-0 flex items-end p-8">
                             <span
                                 class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
@@ -1250,7 +1451,7 @@
                         </div>
                     </div>
                     <h4 class="text-2xl font-display font-bold text-white">Apex Architecture</h4>
-                    <span class="text-white text-sm">Web Design • SEO</span>
+                    <span class="text-white text-sm">SEO • Technical Optimization</span>
                     <br><br>
                     <a href="https://wa.me/919737472636"
                         class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
@@ -1258,12 +1459,69 @@
                     </a>
                 </div>
 
-                <!-- Project 4 (Offset) -->
-                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
-                    data-category="branding,marketing">
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item" data-category="seo">
                     <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
-                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800"
-                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Project 4">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Local SEO">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Local Bistro</h4>
+                    <span class="text-white text-sm">Local SEO • Google My Business</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="seo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="E-commerce SEO">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Shopify Plus</h4>
+                    <span class="text-white text-sm">E-commerce SEO • Conversion Optimization</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item" data-category="seo">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Content SEO">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Content Hub</h4>
+                    <span class="text-white text-sm">Content Strategy • Link Building</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Marketing Projects -->
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="marketing">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="Social Media Marketing">
                         <div class="project-overlay absolute inset-0 flex items-end p-8">
                             <span
                                 class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
@@ -1271,7 +1529,67 @@
                         </div>
                     </div>
                     <h4 class="text-2xl font-display font-bold text-white">Nexus Tech</h4>
-                    <span class="text-white text-sm">Brand Identity • Marketing</span>
+                    <span class="text-white text-sm">Social Media • Content Marketing</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
+                    data-category="marketing">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="Email Marketing">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Digital Boost</h4>
+                    <span class="text-white text-sm">Email Marketing • Automation</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group project-item" data-category="marketing">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0" alt="PPC Campaign">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Growth Partners</h4>
+                    <span class="text-white text-sm">PPC • Google Ads</span>
+                    <br><br>
+                    <a href="https://wa.me/919737472636"
+                        class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
+                        Get A Quote Now! <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="reveal-up interactive-element cursor-none group md:mt-32 project-item"
+                    data-category="marketing">
+                    <div class="project-card aspect-[4/5] bg-gray-800 mb-6 rounded-2xl border border-white/5">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0"
+                            alt="Influencer Marketing">
+                        <div class="project-overlay absolute inset-0 flex items-end p-8">
+                            <span
+                                class="bg-gradient-to-r from-purple-300 to-pink-300 text-black px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest">View
+                                Case Study</span>
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-display font-bold text-white">Viral Reach</h4>
+                    <span class="text-white text-sm">Influencer Marketing • Campaign Management</span>
                     <br><br>
                     <a href="https://wa.me/919737472636"
                         class="inline-flex items-center gap-2 text-fuchsia-300 font-bold uppercase text-xs tracking-widest hover:underline interactive-element">
@@ -1307,38 +1625,46 @@
                 <div class="space-y-12">
                     <div class="border-l-2 border-fuchsia-300 pl-8">
                         <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo
-                            Chameleo GFX Studio delivered a stunning, compliant, high-performing website boosting engagement and distributor inquiries significantly worldwide."</p>
+                            Chameleo GFX Studio delivered a stunning, compliant, high-performing website boosting
+                            engagement and distributor inquiries significantly worldwide."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
-                                    <img src="https://i.ibb.co/qLPpPdN8/download.webp" alt="author image" class="w-7 h-7 object-contain rounded-full">
+                                <img src="https://i.ibb.co/qLPpPdN8/download.webp" alt="author image"
+                                    class="w-7 h-7 object-contain rounded-full">
                             </div>
                             <div>
                                 <span class="block font-bold text-sm">Jagatjit Industries</span>
-                                
+
                             </div>
                         </div>
                     </div>
                     <div class="border-l-2 border-gray-800 pl-8 opacity-50 hover:opacity-100 transition-opacity">
-                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo GFX Studio transformed Mr. Spinkle with logo, ecommerce website, SEO, boosting visibility and daily orders."</p>
+                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo
+                            GFX Studio transformed Mr. Spinkle with logo, ecommerce website, SEO, boosting visibility
+                            and daily orders."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
-                                <img src="https://i.ibb.co/6cxBrRrn/Mr-Sprinkle-CGjx-UV0y-removebg-preview.png" alt="author image" class="w-7 h-7 object-contain rounded-full">
+                                <img src="https://i.ibb.co/6cxBrRrn/Mr-Sprinkle-CGjx-UV0y-removebg-preview.png"
+                                    alt="author image" class="w-7 h-7 object-contain rounded-full">
                             </div>
                             <div>
                                 <span class="block font-bold text-sm">Mr. Sprinkle</span>
-                                
+
                             </div>
                         </div>
                     </div>
                     <div class="border-l-2 border-gray-800 pl-8 opacity-50 hover:opacity-100 transition-opacity">
-                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"They delivered a high-quality cybersecurity website quickly, with performance, communication, security, animations, and attention to detail."</p>
+                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"They
+                            delivered a high-quality cybersecurity website quickly, with performance, communication,
+                            security, animations, and attention to detail."</p>
                         <div class="flex items-center gap-4">
-                              <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
-                                <img src="https://i.ibb.co/jPtJxcLJ/download-1.webp" alt="author image" class="w-7 h-7 object-contain rounded-full">
+                            <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
+                                <img src="https://i.ibb.co/jPtJxcLJ/download-1.webp" alt="author image"
+                                    class="w-7 h-7 object-contain rounded-full">
                             </div>
                             <div>
                                 <span class="block font-bold text-sm">Cybervantage</span>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -1410,7 +1736,7 @@
     <section id="contact" class="min-h-screen flex flex-col justify-between py-12 px-6 relative">
         <div
             class="max-w-[1400px] mx-auto w-full h-full flex flex-col justify-center items-center text-center flex-grow">
-            <h2 class="font-display font-black text-[11vw] leading-[0.8] mb-8 text-white reveal-up">
+            <h2 class="font-display font-black text-[11vw] leading-[1.2] md:leading-[0.8] mb-8 text-white reveal-up">
                 READY TO<br>ASCEND?
             </h2>
             <p class="text-white text-lg md:text-xl max-w-xl mb-12 reveal-up">
@@ -1431,7 +1757,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
                 <div>
                     <img src="https://i.ibb.co/q39sghX1/Group-13-removebg-preview.png" alt="Chameleo GFX Studio Logo"
-                        class="w-32 md:w-60 mb-6 mx-auto md:mx-0 object-contain brightness-0 invert">
+                        class="w-40 md:w-60 mb-6 mx-auto md:mx-0 object-contain brightness-0 invert">
                     <p class="text-white text-sm">F-1001, PNTC, Ahmedabad, Gujarat, India</p>
                     <a href="mailto:hello@chameleogfx.com"
                         class="text-white text-sm hover:text-white transition-colors">info@chameleogfxstudio.com</a>
@@ -1454,18 +1780,21 @@
                     </ul>
                 </div>
                 <div>
-                    <span class="font-bold text-sm uppercase block mb-4 text-white">Legal</span>
+                    <span class="font-bold text-sm uppercase block mb-4 text-white">Sitemap</span>
                     <ul class="space-y-2 text-sm text-white">
-                        <li><a href="https://chameleogfxstudio.com/privacy-policy"
-                                class="hover:text-fuchsia-300 transition-colors">Privacy Policy</a></li>
-                        <li><a href="https://chameleogfxstudio.com/terms-and-conditions"
-                                class="hover:text-fuchsia-300 transition-colors">Terms of Service</a></li>
+                        <li><a href="#about" class="hover:text-fuchsia-300 transition-colors">Agency</a></li>
+                        <li><a href="#services" class="hover:text-fuchsia-300 transition-colors">Expertise</a></li>
+                        <li><a href="#why-us" class="hover:text-fuchsia-300 transition-colors">Why Us</a></li>
+                        <li><a href="#work" class="hover:text-fuchsia-300 transition-colors">Work</a></li>
+                        <li><a href="#contact" class="hover:text-fuchsia-300 transition-colors">Contact</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <span class="font-bold text-sm uppercase block mb-4 text-white">Global Recognition</span>
                     <div class="grid grid-cols-3 gap-3 justify-items-center md:justify-items-start">
-                        <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x395e8352576c9bb7:0xb31b06ef9227d5e4!12e1?source=g.page.m._&laa=merchant-review-solicitation" target="_blank"
+                        <a href="https://www.google.com/maps/place//data=!4m3!3m2!1s0x395e8352576c9bb7:0xb31b06ef9227d5e4!12e1?source=g.page.m._&laa=merchant-review-solicitation"
+                            target="_blank"
                             class="bg-white border border-white/20 rounded-lg p-4 w-24 h-24 flex items-center justify-center transition-all interactive-element"
                             title="Google Reviews">
                             <img src="https://i.ibb.co/NndWvvFS/Frame-1.webp" alt="Google Reviews"
@@ -1477,30 +1806,32 @@
                             <img src="https://i.ibb.co/TqqZzRjc/chamaleogfxstudio-CB8-HDs8-A.webp" alt="Trustpilot"
                                 class="max-w-full max-h-full object-contain">
                         </a>
-                        <a href="https://www.goodfirms.co/company/chameleo-gfx-studio" target="_blank"
-                            class="bg-white border border-white/20 rounded-lg p-4 w-24 h-24 flex items-center justify-center transition-all interactive-element"
-                            title="Clutch">
-                            <img src="https://i.ibb.co/TBwX9zkp/top-web-design-companies-C9-FNo-PBy.jpg" alt="Clutch"
-                                class="max-w-full max-h-full object-contain">
-                        </a>
+
                         <a href="https://www.trustpilot.com/review/chameleogfxstudio.com" target="_blank"
                             class="bg-white border border-white/20 rounded-lg p-4 w-24 h-24 flex items-center justify-center transition-all interactive-element"
                             title="GoodFirms">
                             <img src="https://i.ibb.co/LdGXXMgn/Trustpilot-Badge-CLc-DBx-Fw.webp" alt="GoodFirms"
                                 class="max-w-full max-h-full object-contain">
                         </a>
-                        <a href="https://www.designrush.com/agency/profile/chameleo-gfx-studio"
-                            target="_blank"
-                            class="bg-white border border-white/20 rounded-lg p-4 w-24 h-24 flex items-center justify-center transition-all interactive-element"
-                            title="DesignRush">
-                            <img src="https://i.ibb.co/3m6bqqhp/designrush-new-logo-rh-XFgby7.webp" alt="DesignRush"
-                                class="max-w-full max-h-full object-contain">
-                        </a>
+
                     </div>
                 </div>
             </div>
-            <div class="text-center text-white text-xs mt-12">
-                © 2026 Chameleo GFX Studio. All Rights Reserved.
+            <div
+                class="flex flex-col md:flex-row justify-between items-center text-white text-xs mt-12 space-y-4 md:space-y-0">
+                <div>
+                    © 2026 Chameleo GFX Studio. All Rights Reserved.
+                </div>
+                <div>
+                    <ul class="flex items-center gap-3 text-xs text-white">
+                        <li><a href="https://chameleogfxstudio.com/privacy-policy"
+                                class="hover:text-fuchsia-300 transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://chameleogfxstudio.com/terms-and-conditions"
+                                class="hover:text-fuchsia-300 transition-colors">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+
             </div>
         </footer>
     </section>
@@ -1645,7 +1976,7 @@
             function filterProjects(filter) {
                 projects.forEach(p => {
                     const cats = (p.dataset.category || '').split(',').map(s => s.trim()).filter(Boolean);
-                    if (filter === 'all' || cats.includes(filter)) {
+                    if (cats.includes(filter)) {
                         p.style.display = '';
                     } else {
                         p.style.display = 'none';
@@ -1662,10 +1993,10 @@
             });
 
             // Initialize
-            const defaultBtn = tabContainer.querySelector('[data-filter="all"]') || tabs[0];
+            const defaultBtn = tabContainer.querySelector('[data-filter="website"]') || tabs[0];
             if (defaultBtn) {
                 activateTab(defaultBtn);
-                filterProjects(defaultBtn.dataset.filter || 'all');
+                filterProjects(defaultBtn.dataset.filter || 'website');
             }
         })();
 
