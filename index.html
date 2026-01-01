@@ -24,11 +24,16 @@
     <!-- Google Translate Script -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,fr,de,hi,gu,ja,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,hi,gu,ja,zh-CN',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
+                autoDisplay: false
+            }, 'google_translate_element');
         }
     </script>
     <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
         tailwind.config = {
@@ -510,7 +515,7 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
 
-        .lang-dropdown:hover .lang-menu {
+        .lang-dropdown.active .lang-menu {
             display: flex;
         }
 
@@ -704,11 +709,12 @@
                 </div>
             </div>
 
-            <h1 class="font-display font-extrabold text-[16vw] md:text-[11vw] leading-[0.85] tracking-tighter mb-20 md:mb-12 text-white reveal-up break-words text-center md:text-left"
+            <h1 class="font-display font-extrabold text-[11vw] md:text-[8vw] leading-[0.85] tracking-tighter mb-20 md:mb-12 text-white reveal-up break-words text-center md:text-left"
                 style="transition-delay: 0.1s;">
-                DIGITAL <br>
+                BRINGING IDEAS TO <br>
                 <span
-                    class="pl-0 md:pl-[10vw] italic font-light text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-fuchsia-300 to-white">REALITY...</span>
+                    class="font-light text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-fuchsia-300 to-white">DIGITAL
+                    REALITY</span>
             </h1>
 
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end border-t border-white/10 pt-8 mt-12 reveal-up"
@@ -778,15 +784,10 @@
             <div class="md:col-span-7 relative reveal-up" style="transition-delay: 0.2s;">
                 <div
                     class="aspect-video bg-gray-900 rounded-2xl overflow-hidden relative group interactive-element border border-white/10">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
-                        alt="Office"
-                        class="object-cover w-full h-full opacity-60 group-hover:opacity-80 transition-opacity duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div
-                            class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-purple-300 to-pink-300 backdrop-blur-md rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(216,180,254,0.3)] group-hover:scale-110 transition-transform duration-300">
-                            <i data-lucide="play" class="w-5 h-5 md:w-6 md:h-6 fill-black text-black ml-1"></i>
-                        </div>
-                    </div>
+                    <video src="https://chameleogfxstudio.in/chameleo-digital-tech-solution/cgs-video.mp4" autoplay
+                        muted loop playsinline
+                        class="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105">
+                    </video>
                 </div>
             </div>
         </div>
@@ -1021,44 +1022,53 @@
             <div class="absolute inset-y-0 right-0 w-20 md:w-32 bg-gradient-to-l from-onyx to-transparent z-10"></div>
 
             <div
-                class="marquee-track flex gap-16 md:gap-24 items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
+                class="marquee-track flex gap-2 md:gap-4 items-center opacity-60 hover:opacity-100 transition-opacity duration-300">
                 <!-- Content Block 1 -->
-                <div class="flex gap-16 md:gap-24 items-center">
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">NEBULA</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">QUANTUM</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">HORIZON</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">VERIDIAN</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">OMEGA</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">APEX</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">ZENITH</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">VORTEX</span>
+                <div class="flex gap-2 md:gap-4 items-center">
+                    <img src="https://i.ibb.co/7Bxtm4t/partner-6-BLHswyyv.webp" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-7-DWJPbxu7.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+
+                    <img src="https://chameleogfxstudio.com/assets/partner-9-C8_mJiim.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-10-CBp-DyCS.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-11-Da8b1-XQ.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-12-B9PZEngQ.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-13-Bi4T2J_o.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-14-C1YDDFbK.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-15-9DwDbJs-.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-16-Cxjl91us.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+
                 </div>
                 <!-- Duplicate Content Block for Seamless Loop -->
-                <div class="flex gap-16 md:gap-24 items-center">
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">NEBULA</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">QUANTUM</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">HORIZON</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">VERIDIAN</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">OMEGA</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">APEX</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">ZENITH</span>
-                    <span
-                        class="text-2xl md:text-4xl font-display font-bold text-white hover:text-fuchsia-300 transition-colors cursor-default">VORTEX</span>
+                <div class="flex gap-2 md:gap-4 items-center">
+
+                    <img src="https://chameleogfxstudio.com/assets/partner-1-CW8eH_ND.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-2-DjvZHLSG.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-3-CLzYftyq.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-4-BZn-q6rj.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://i.ibb.co/7Bxtm4t/partner-6-BLHswyyv.webp" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-7-DWJPbxu7.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+
+                    <img src="https://chameleogfxstudio.com/assets/partner-9-C8_mJiim.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+                    <img src="https://chameleogfxstudio.com/assets/partner-10-CBp-DyCS.png" alt="Amazon"
+                        class="brand-logo h-12 md:h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-default">
+
                 </div>
             </div>
         </div>
@@ -1180,19 +1190,19 @@
                 <div
                     class="portfolio-tabs w-full md:w-auto max-w-full flex justify-start gap-3 overflow-x-auto hide-scrollbar reveal-up">
                     <button
-                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white "
                         data-filter="website" aria-pressed="true">Website</button>
                     <button
-                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white "
                         data-filter="logo">Logo</button>
                     <button
-                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white "
                         data-filter="branding">Branding</button>
                     <button
-                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white "
                         data-filter="seo">SEO</button>
                     <button
-                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white px-4 py-2"
+                        class="tab-btn text-sm uppercase tracking-widest border-b border-fuchsia-300 pb-1 hover:text-fuchsia-300 transition-colors interactive-element text-white "
                         data-filter="marketing">Marketing</button>
                 </div>
 
@@ -1625,8 +1635,8 @@
                 <div class="space-y-12">
                     <div class="border-l-2 border-fuchsia-300 pl-8">
                         <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo
-                            Chameleo GFX Studio delivered a stunning, compliant, high-performing website boosting
-                            engagement and distributor inquiries significantly worldwide."</p>
+                            GFX Studio built a modern, polished website for our liquor brand that boosted engagement and
+                            distributor inquiries significantly."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
                                 <img src="https://i.ibb.co/qLPpPdN8/download.webp" alt="author image"
@@ -1639,31 +1649,31 @@
                         </div>
                     </div>
                     <div class="border-l-2 border-gray-800 pl-8 opacity-50 hover:opacity-100 transition-opacity">
-                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo
-                            GFX Studio transformed Mr. Spinkle with logo, ecommerce website, SEO, boosting visibility
-                            and daily orders."</p>
+                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Fast
+                            delivery with top quality. They built our cybersecurity site exactly as needed, with great
+                            visuals, smooth performance, and excellent communication."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
                                 <img src="https://i.ibb.co/6cxBrRrn/Mr-Sprinkle-CGjx-UV0y-removebg-preview.png"
                                     alt="author image" class="w-7 h-7 object-contain rounded-full">
                             </div>
                             <div>
-                                <span class="block font-bold text-sm">Mr. Sprinkle</span>
+                                <span class="block font-bold text-sm">Cyber Vantage</span>
 
                             </div>
                         </div>
                     </div>
                     <div class="border-l-2 border-gray-800 pl-8 opacity-50 hover:opacity-100 transition-opacity">
-                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"They
-                            delivered a high-quality cybersecurity website quickly, with performance, communication,
-                            security, animations, and attention to detail."</p>
+                        <p class="text-xl md:text-3xl font-display font-medium leading-tight mb-6 text-white">"Chameleo
+                            GFX Studio delivered creative brand design with quick revisions, strong understanding, and a
+                            highly responsive, professional team."</p>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center">
                                 <img src="https://i.ibb.co/jPtJxcLJ/download-1.webp" alt="author image"
                                     class="w-7 h-7 object-contain rounded-full">
                             </div>
                             <div>
-                                <span class="block font-bold text-sm">Cybervantage</span>
+                                <span class="block font-bold text-sm">Hocco</span>
 
                             </div>
                         </div>
@@ -1943,22 +1953,79 @@
             }
         });
 
+
+        // Language Dropdown Toggle
+        const langDropdown = document.querySelector('.lang-dropdown');
+        const langMenu = document.querySelector('.lang-menu');
+
+        // Toggle dropdown on click
+        langDropdown.addEventListener('click', function (e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function () {
+            langDropdown.classList.remove('active');
+        });
+
+        // Prevent dropdown from closing when clicking inside it
+        langMenu.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+
         // Language Switch Logic
         function changeLanguage(langCode) {
-            const selectElement = document.querySelector('.goog-te-combo');
-            if (selectElement) {
-                selectElement.value = langCode;
-                selectElement.dispatchEvent(new Event('change'));
-            }
-            // Update displayed language
-            document.querySelector('#current-lang').textContent = langCode.toUpperCase();
+            // Close dropdown
+            langDropdown.classList.remove('active');
+
+            // Wait for Google Translate to initialize
+            const checkGoogleTranslate = setInterval(() => {
+                const selectElement = document.querySelector('.goog-te-combo');
+                if (selectElement) {
+                    clearInterval(checkGoogleTranslate);
+                    selectElement.value = langCode;
+                    selectElement.dispatchEvent(new Event('change'));
+
+                    // Update displayed language code
+                    const langNames = {
+                        'en': 'EN',
+                        'es': 'ES',
+                        'fr': 'FR',
+                        'de': 'DE',
+                        'hi': 'HI',
+                        'gu': 'GU',
+                        'ja': 'JA',
+                        'zh-CN': 'ZH'
+                    };
+                    document.querySelector('#current-lang').textContent = langNames[langCode] || langCode.toUpperCase().substring(0, 2);
+                }
+            }, 100);
+
+            // Stop checking after 10 seconds
+            setTimeout(() => clearInterval(checkGoogleTranslate), 10000);
         }
 
+        // Add click event listeners to language options
         document.querySelectorAll('.lang-option').forEach(option => {
             option.addEventListener('click', function () {
                 const lang = this.getAttribute('data-lang');
                 changeLanguage(lang);
             });
+        });
+
+        // Set default language to current browser language or English
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const browserLang = navigator.language || navigator.userLanguage;
+                const langCode = browserLang.split('-')[0];
+                const supportedLangs = ['en', 'es', 'fr', 'de', 'hi', 'gu', 'ja'];
+
+                // Only auto-translate if browser language is not English
+                if (langCode !== 'en' && supportedLangs.includes(langCode)) {
+                    changeLanguage(langCode);
+                }
+            }, 1000);
         });
         // Portfolio tabs filtering
         (function () {
