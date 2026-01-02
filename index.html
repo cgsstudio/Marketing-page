@@ -135,6 +135,15 @@
             background-color: rgba(0, 0, 0, 0.03) !important;
         }
 
+        /* Gradient Masks for Marquee in Light Mode */
+        body.light-mode .gradient-mask-left {
+            background-image: linear-gradient(to right, #e2e8f0, transparent) !important;
+        }
+
+        body.light-mode .gradient-mask-right {
+            background-image: linear-gradient(to left, #e2e8f0, transparent) !important;
+        }
+
         /* Specific Light Mode Adjustments */
         body.light-mode nav {
             mix-blend-mode: normal;
@@ -626,7 +635,7 @@
 
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50 px-6 py-1 text-white mix-blend-difference transition-all duration-300">
-        <div class="flex justify-between items-center container mx-auto ">
+        <div class="flex justify-between items-center container mx-auto">
             <a href="https://chameleogfxstudio.com/" class="interactive-element relative z-50 block w-40 md:w-60">
                 <img src="https://chameleogfxstudio.com/assets/Cgs_Logo-Bq-O945l.png" alt="Chameleo GFX Studio Logo"
                     class="w-full h-auto object-contain brightness-0 invert">
@@ -1027,10 +1036,10 @@
         <div class="relative w-full overflow-hidden">
             <!-- Gradient Masks for smooth fade edges -->
             <div
-                class="absolute inset-y-0 left-0 w-20 md:w-32 bg-gradient-to-r from-onyx to-transparent z-10 pointer-events-none">
+                class="gradient-mask-left absolute inset-y-0 left-0 w-20 md:w-32 bg-gradient-to-r from-onyx to-transparent z-10 pointer-events-none">
             </div>
             <div
-                class="absolute inset-y-0 right-0 w-20 md:w-32 bg-gradient-to-l from-onyx to-transparent z-10 pointer-events-none">
+                class="gradient-mask-right absolute inset-y-0 right-0 w-20 md:w-32 bg-gradient-to-l from-onyx to-transparent z-10 pointer-events-none">
             </div>
 
             <div class="swiper brandSwiper opacity-60 hover:opacity-100 transition-opacity duration-300">
